@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+
+    <title>Off The Tee</title>
+
+</head>
+
+<body>
+    <h1>Choose Your Projected Shot</h1>
+    <h2> <span id="currentHole"></span> </h2>
+    <div id="buttonWrapper">
+        <br />
+        <br />
+        <button type="button" id="slice" class="buttonStyles" onclick="changeShotTypeSlice();"> Slice </button>
+        <br />
+        <button type="button" id="draw" class="buttonStyles" onclick="changeShotTypeDraw();"> Draw </button>
+        <br />
+        <button type="button" id="hook" class="buttonStyles" onclick="changeShotTypeHook();"> Hook </button>
+        <br />
+        <button type="button" id="Fade" class="buttonStyles" onclick="changeShotTypeFade();"> Fade </button>
+        <br />
+        <button type="button" id="straight" class="buttonStyles" onclick="changeShotTypeStraight();"> Straight </button>
+        <br />
+        <button type="button" id="wiff" class="buttonStyles" onclick="changeShotTypeWiff();"> Wiffed </button>
+    </div>
+    
+
+
+    <div id="buttonWrapper2">
+            <br />
+            <br />
+            <button type="button" id="slice2" class="buttonStyles2" onclick="changeShotTypeSlice2();"> Slice </button>
+            <br />
+            <button type="button" id="draw2" class="buttonStyles2" onclick="changeShotTypeDraw2();"> Draw </button>
+            <br />
+            <button type="button" id="hook2" class="buttonStyles2" onclick="changeShotTypeHook2();"> Hook </button>
+            <br />
+            <button type="button" id="Fade2" class="buttonStyles2" onclick="changeShotTypeFade2();"> Fade </button>
+            <br />
+            <button type="button" id="straight2" class="buttonStyles2" onclick="changeShotTypeStraight2();"> Straight </button>
+            <br />
+            <button type="button" id="wiff2" class="buttonStyles2" onclick="changeShotTypeWiff2();"> Wiffed </button>
+        </div>
+        
+        <button type="button" id="nextHole" onclick="newHole();">Next Hole</button>
+    
+
+
+    <script src="javaScript/JavaScript.js"></script>
+</body>
+</html>

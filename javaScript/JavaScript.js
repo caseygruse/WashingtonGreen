@@ -13,100 +13,96 @@ var shotType = "";
 // variable for the shot that actualy happened
 var realShotType ="";
 
-
 displayCurrentHole();
+
 //Displays the hole number on the html page
 function displayCurrentHole() {
     document.getElementById("currentHole").innerHTML = numHole;
 }
 
 // function to grab elements by ID
-function getElementByID(element){
+function getElementByID(element) {
     document.getElementById(element);
 }
 
 // These are the shotType functions that will change shotType using the onclicks.
-function changeShotTypeSlice(){
+function changeShotTypeSlice() {
     shotType = "Slice"
-    
 }
 
-function changeShotTypeDraw(){
+function changeShotTypeDraw() {
     shotType = "Draw"
-    
 }
 
-function changeShotTypeHook(){
+function changeShotTypeHook() {
     shotType = "Hook"
-    
 }
 
-function changeShotTypeFade(){
+function changeShotTypeFade() {
     shotType = "Fade" 
 }
 
-function changeShotTypeStraight(){
+function changeShotTypeStraight() {
     shotType = "Straight" 
 }
 
-function changeShotTypeWiff(){
+function changeShotTypeWiff() {
     shotType = "Wiff"   
 }
 
 
 //New hole counter function
-function newHole(){
+function newHole() {
     projectedShots();
+    
     actualShotsFunction();
+    
     numHole +=1; 
-    if (numHole >= 19){
+    
+    if (numHole >= 19) {
         alert(projected);
+        
         alert(actualShots);
     }   
-    
     
     displayCurrentHole();  
 }
 
-
 //This funciton stores the projected shots data into the numHole index.
-function projectedShots(){
+function projectedShots() {
     projected[numHole-1] = shotType;
-    
 }
 
 
-    
-/////////////THESE ARE THE FUNCTIONS ARE FOR WHAT SHOT ACTUALY HAPPENED
+///////////////////////////////////////////////////////////////////////////////////////
+/////////////THESE ARE THE FUNCTIONS ARE FOR WHAT SHOT ACTUALY HAPPENED////////////////
+///////////////////////////////////////////////////////////////////////////////////////
 
-function changeShotTypeSlice2(){
+function changeShotTypeSlice2() {
     realShotType = "Slice"
-    
 }
 
-function changeShotTypeDraw2(){
+function changeShotTypeDraw2() {
     realShotType ="Draw"
-    
 }
 
-function changeShotTypeHook2(){
+function changeShotTypeHook2() {
     realShotType ="Hook"
-    
 }
 
-function changeShotTypeFade2(){
+function changeShotTypeFade2() {
     realShotType = "Fade" 
 }
 
-function changeShotTypeStraight2(){
+function changeShotTypeStraight2() {
     realShotType = "Straight" 
 }
 
-function changeShotTypeWiff2(){
+function changeShotTypeWiff2() {
     realShotType = "Wiff"   
 }
 
-function actualShotsFunction(){
+function actualShotsFunction() {
     actualShots[numHole-1] = realShotType;
 
 }

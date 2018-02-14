@@ -1,3 +1,10 @@
 # WashingtonGreen
 Golf and Disc golf web application. (score keeping, maps, schedules, events)
-sdfhsrt
+
+Placeholder:
+  
+  Add Goals Here
+  Pseudocode
+  
+  Add Goals Here
+  Pseudocode

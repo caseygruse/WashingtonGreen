@@ -3,6 +3,7 @@
 
 # WashingtonGreen
 Golf and Disc golf web application. (score keeping, maps, schedules, events)
+
 THIS APPLICATION IS BEING DESIGNED BY CASEY R GRUSE, S GRUSE, ANTHONY MCCANN DAKOTA R TOMINUS....
 
 THE PURPOSE OF THIS WEB APP IS TO PROVIDE AND EASY ALL IN ONE SOLUTION FOR SCORE KEEPING AND THE LIKE.
@@ -67,4 +68,5 @@ TO DO
 5 LOGO?
 
 6 NAME?
+
 

@@ -1,23 +1,18 @@
-!!!!!!LOOK AT RAW VERSION!!!!!!!!
+# Washington Green
 
-
-# WashingtonGreen
 Golf and Disc golf web application. (score keeping, maps, schedules, events)
 
-THIS APPLICATION IS BEING DESIGNED BY CASEY R GRUSE, S GRUSE, ANTHONY MCCANN DAKOTA R TOMINUS....
+## Getting Started
 
-THE PURPOSE OF THIS WEB APP IS TO PROVIDE AND EASY ALL IN ONE SOLUTION FOR SCORE KEEPING AND THE LIKE.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+Naming Conventions: 
 
-Placeholder:
-
-Add Goals Here Pseudocode
-
-Add Goals Here Pseudocode
-
-NAMING CONVENTIONS: LOWER CAMEL CASE "numHole" "realShotType" "displayCurrentHole"
+  lowerCamelCase = (i.e. "numHole" + "realShotType" + "displayCurrentHole")
 
 Java Coding Style:
+
+```
 //COMMENTS
 function displayCurrentHole() {
     document.getElementById("currentHole").innerHTML = numHole;
@@ -39,34 +34,86 @@ function newHole() {
     }   
     displayCurrentHole();  
 }
+```
 
-BLOCK COMMENTS:
-///////////////////////////////////////////////////////////////////////
-///////THESE ARE THE FUNCTIONS ARE FOR WHAT SHOT ACTUALY HAPPENED//////
-///////////////////////////////////////////////////////////////////////
+### Goals
 
+A step by step series of examples that tell you have to get a development env running
 
+Frontend:
 
+```
+1) Webpage
 
+2) Canvas
 
+3) Logo
 
+4) Name
+```
 
+Backend:
 
+```
+1) Server
 
+2) Database
+```
 
-TO DO
+End with an example of getting some data out of the system or using it for a little demo
 
+## Running the tests
 
-1 SET UP WEBPAGE
+Explain how to run the automated tests for this system
 
-2 SET UP WEB SERVER
+### Break down into end to end tests
 
-3 SET UP CANVAS
+Explain what these tests test and why
 
-4 SET UP DATABASE
+```
+Give an example
+```
 
-5 LOGO?
+### And coding style tests
 
-6 NAME?
+Explain what these tests test and why
 
+```
+Give an example
+```
 
+## Deployment
+
+Add additional notes about how to deploy this on a live system
+
+## Built With
+
+* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Maven](https://maven.apache.org/) - Dependency Management
+* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+
+## Authors
+
+* **Casey Gruse** - *Initial work* - [caseygruse](https://github.com/caseygruse)
+* **Koda Tominus** - *Initial work* - [KodaRayTominus](https://github.com/KodaRayTominus)
+* **Anthony McCann** - *Initial work* - [AnMcCbusiness](https://github.com/AnMcCbusiness)
+
+See also the list of [contributors](https://github.com/KodaRayTominus/WashingtonGreen/graphs/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tip to anyone who's code was used
+* Inspiration
+* etc

@@ -4,7 +4,7 @@ Golf and Disc golf web application. (score keeping, maps, schedules, events)
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Please view the flowcharts in the WGDiagram folder (you'll need a copy of Visio) for info on project.
 
 Naming Conventions: 
 

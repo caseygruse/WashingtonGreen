@@ -4,7 +4,11 @@ Golf and Disc golf web application. (score keeping, maps, schedules, events)
 
 ## Getting Started
 
-Please view the flowcharts in the WGDiagram folder (you'll need a copy of Visio) for info on project.
+Please view the flowcharts in the WGDiagram folder (you'll need a copy of Visio for the editable version), or just look at the snippet pictures in the same folder or below.
+
+![alt text](https://github.com/KodaRayTominus/WashingtonGreen/blob/master/WGDiagrams/WGDiagramSnippet1.PNG)
+![alt text](https://github.com/KodaRayTominus/WashingtonGreen/blob/master/WGDiagrams/WGDiagramSnippet2.PNG)
+![alt text](https://github.com/KodaRayTominus/WashingtonGreen/blob/master/WGDiagrams/WGDiagramSnippet3.PNG)
 
 Naming Conventions: 
 

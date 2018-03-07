@@ -4,7 +4,7 @@ Golf and Disc golf web application. (score keeping, maps, schedules, events)
 
 ## Getting Started
 
-Go to the Projects link above > then go to the Pseucode project. From there you'll be able to see open issues ( we can treat them like tickets or 'to-do'.
+Go to the Projects link above > then go to the Pseucode project. From there you'll be able to see open issues ( we can treat them like tickets or 'to-do'. Also, go to the Issues link above to create new goals or ideas.
 
 Please view the flowcharts in the WGDiagram folder (you'll need a copy of Visio for the editable version), or just look at the snippet pictures in the same folder or below.
 

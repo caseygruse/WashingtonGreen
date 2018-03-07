@@ -1,5 +1,6 @@
 //new hole counter
 var numHole = 1;
+////////
 
 //The Array for the users guess of what shot he will have.
 var projected = new Array(18);

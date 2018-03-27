@@ -14,20 +14,20 @@ var holeArray = new Array(18);
  * and referenced by there index.
  * @param {*} holeNumber 
  * @param {*} par 
- * @param {*} shotType 
+ * @param {*} shotType1 
  * @param {*} shotType2 
  * @param {*} greenReg 
- * @param {*} fairway 
+ * @param {*} fairway1 
  * @param {*} fairway2 
  * @param {*} recovery 
  * @param {*} puts 
  */
-var Hole = function hole(holeNumber, par, shotType, shotType2, greenReg, fairway, fairway2, recovery, putts) {
+var Hole = function hole(holeNumber, par, shotType1, shotType2, greenReg, fairway1, fairway2, recovery, putts) {
     this.holeNumber = holeNumber;
     this.par = par;
-    this.shotType = shotType;
+    this.shotType1 = shotType1;
     this.greenReg = greenReg;
-    this.fairway = fairway;
+    this.fairway1 = fairway1;
     this.fairway2 = fairway2;
     this.shotType2 = shotType2;
     this.recovery = recovery;
@@ -83,10 +83,66 @@ createHoleObjects();
 
 //////////////////////////////////////////////Creating events for buttons that will give the objects values.
 function parEvent() {
-    
+    var parButtons = document.getElementById("parWrapper").children;
+    for( i = 0; i < parButtons.length; i++) {
+        parButtons[i].addEventListener("click", function() {
+            holeArray[numHole-1].par = this.value;
+        })
+    }
 }
+parEvent();
 
+function fairwayEvent1() {
+    var fairwayButtons1 = document.getElementById("fairwayWrapper1").getElementsByTagName("button");
+    for( i = 0; i < fairwayButtons1.length; i++) {
+        fairwayButtons1[i].addEventListener("click", function() {
+            holeArray[numHole-1].fairway1 = parseInt(this.value);
+        })
+    }
+}
+fairwayEvent1();
+/**
+ * if fairway = 1 this funciton should be used 
+ */
+function shotType1FairwayYes() {
+    var shotType1FairwayYes = document.getElementById("shotType1FairwayYes").children;
+    for( i = 0; i < shotType1FairwayYes.length; i++) {
+        shotType1FairwayYes[i].addEventListener("click", function() {
+            holeArray[numHole-1].shotType1 = parseInt(this.value);
+        })
+    }
+}
+shotType1FairwayYes();
 
+function shotType1FairwayNo() {
+    var shotType1FairwayNo = document.getElementById("shotType1FairwayNo").children;
+    for( i = 0; i < shotType1FairwayNo.length; i++) {
+        shotType1FairwayNo[i].addEventListener("click", function() {
+            holeArray[numHole-1].shotType1 = this.value;
+        })
+    }
+}
+shotType1FairwayNo();
+
+function greenRegEvent() {
+    var greenReg = document.getElementById("greenInReg").children;
+    for( i = 0; i < greenReg.length; i++) {
+        greenReg[i].addEventListener("click", function() {
+            holeArray[numHole-1].greenReg = parseInt(this.value);
+        })
+    }
+}
+greenRegEvent();
+
+function scrambleShots() {
+    var scrambleShots = document.getElementById("scrambleToGreen").children;
+    for( i = 0; i < scrambleShots.length; i++) {
+        scrambleShots[i].addEventListener("click", function() {
+            holeArray[numHole-1].recovery = parseInt(this.value);
+        })
+    }
+}
+scrambleShots();
 /**
  * this function loops through the putt buttons and stores there value
  * into the putt property of a hole object as an int .
@@ -95,7 +151,7 @@ function parEvent() {
 function puttEvent() {
     var puttButtons = document.getElementById("puttWrapper").children;
     for( i = 0; i < puttButtons.length; i++) {
-        puttButtons[i].addEventListener("click", function(){
+        puttButtons[i].addEventListener("click", function() {
             holeArray[numHole-1].putts=parseInt(this.value);
         })
     }
@@ -103,9 +159,6 @@ function puttEvent() {
 puttEvent();
 
 
-//function givePar() {
-  //  holeArray[numHole].par = 
-//}
 
 
 
